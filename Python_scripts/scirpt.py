@@ -2,7 +2,7 @@ import csv
 import codecs
 import sys
 
-def RefineData(filename="restaurants_origin.csv",output_filename="restaurants.csv"): 
+def RefineData(filename="restaurants.csv",output_filename="out.csv"): 
 		list_of_lexemes = []
 		
 		with codecs.open(filename)  as f_input, open(output_filename, 'w', newline='\n') as f_output:
@@ -13,7 +13,7 @@ def RefineData(filename="restaurants_origin.csv",output_filename="restaurants.cs
 			for row in csv_input:
 				row[4]=time_converter(row[4])
 				end=time_converter(row[5])
-				if row[4]>end:
+				if int(row[4])>int(end):
 					end=str(int(end)+(24*60))
 					row[5]=end
 				else:

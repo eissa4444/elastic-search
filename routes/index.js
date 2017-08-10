@@ -2,6 +2,7 @@ let express = require('express')
 let router = express.Router();
 let querystring = require('querystring');
 let search = require('../search.js')
+
 //register end point  
 router.get('/currentlyopen', function (req, res, next) {
     let from = req.query.from;

@@ -41,5 +41,4 @@ const createBody = function (from, size) {
     }
     return body;
 };
-createBody(0, 30);
 module.exports = search;
