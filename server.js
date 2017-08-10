@@ -28,7 +28,7 @@ app.use(bodyParser.json({ type: 'application/json'}));
 // all of our routes will be prefixed with /apilet routes = require('./routes/index');
 let router = express.Router();              // get an instance of the express Router
 let routes = require('./routes/index');
-app.use('/api/ver1.0', routes);
+app.use('/', routes);
 app.use('/api', router);
 
 // START THE SERVER

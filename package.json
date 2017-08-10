@@ -5,15 +5,16 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "indexing":"node indexing.js"
+    "test": "mocha --timeout 10000",
+    "indexing": "node indexing.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eissa4444/elastic-search.git"
   },
   "keywords": [
-    "elastic-search"
+    "elastic-search",
+    "node.js"
   ],
   "author": "Muhamad Eissa",
   "license": "ISC",

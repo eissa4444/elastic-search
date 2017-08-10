@@ -4,17 +4,13 @@ const esClient = new elasticsearch.Client({
     log: 'error'
 });
 
-const search = function (index, from, size) {
-    let body = createBody(from, size);
+const search = function (index, from, size, now) {
+    let body = createBody(from, size, now);
     return esClient.search({ index: index, body: body });
 };
 
-const createBody = function (from, size) {
-    let date = new Date();
-    let now;
-    console.log(date.getHours())
-    now = (date.getHours() * 60) + date.getMinutes();
-    console.log(now);
+const createBody = function (from, size, now) {
+
     let body = {
         size: size,
         from: from,
@@ -41,4 +37,8 @@ const createBody = function (from, size) {
     }
     return body;
 };
-module.exports = search;
+
+module.exports = {
+    search: search,
+    createBody: createBody
+};
