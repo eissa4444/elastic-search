@@ -22,9 +22,19 @@ describe('/GET currentlyopen', () => {
     });
 });
 
-describe('createBody', function() {
-  it('it should create the query body', function() {
-    let body = search.createBody(0,12,123);
-    assert.isObject(body, 'it is an object');
-  });
+describe('Get open resturants at 6:00 (6*60) am', function () {
+    it('it should return an empty array []', function () {
+        search.search('elmenus', 0, 20, 360)
+            .then(results => {
+                assert.equal(results.length, 0);
+            })
+    });
 });
+
+describe('createBody', function () {
+    it('it should create the query body', function () {
+        let body = search.createBody(0, 12, 123);
+        assert.isObject(body, 'it is an object');
+    });
+});
+
