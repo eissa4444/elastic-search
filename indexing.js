@@ -36,7 +36,7 @@
     const resturantsRaw = fs.readFileSync('data/resturants.json');
     const resturants = JSON.parse(resturantsRaw);
     console.log(`${resturants.length} items parsed from data file`);
-    bulkIndex('menus', 'resturant', resturants);
+    bulkIndex('elmenus', 'resturant', resturants);
   };
 
   indexResturants();
