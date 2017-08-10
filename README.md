@@ -12,14 +12,15 @@
 2. Run `npm install` : to install all the project dependencies
 3. Start Elasticsearch
 4. Run `npm run indexing`: to index all the resturand into elasticsearch
-5. Run `npm start` : to start the node server `'ll open at http://localhost:8080`
+5. Run `npm start` : to start the node server 'll open at `http://localhost:8080`
 6. Run `npm test` : to run the unit tests 
 
 ## End points
 
-GET /currentlyopen
-# now you can hit `http://localhost:8080/currentlyopen` on the browser and get the response
-# you can also paging by setting the `from` and `size` parameters `http://localhost:8080/currentlyopen?from=0&size=12`
+`GET /currentlyopen`
+## now you can hit `http://localhost:8080/currentlyopen` on the browser and get the response
+
+## you can also paging by setting the `from` and `size` parameters `http://localhost:8080/currentlyopen?from=0&size=12`
 
 ## List of files in this repo:
 
