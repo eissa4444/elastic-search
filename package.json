@@ -4,7 +4,8 @@
   "description": "elastic search quick demo",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "indexing":"node indexing.js"
   },
   "repository": {
     "type": "git",
