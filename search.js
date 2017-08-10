@@ -13,11 +13,7 @@ const createBody = function (from, size) {
     let date = new Date();
     let now;
     console.log(date.getHours())
-    if (date.getHours() < 10) {
-        now = (date.getHours() * 60) + date.getMinutes() + (24 * 60);
-    } else {
-        now = (date.getHours() * 60) + date.getMinutes();
-    }
+    now = (date.getHours() * 60) + date.getMinutes();
     console.log(now);
     let body = {
         size: size,
@@ -45,5 +41,5 @@ const createBody = function (from, size) {
     }
     return body;
 };
-createBody(0,30);
+createBody(0, 30);
 module.exports = search;
