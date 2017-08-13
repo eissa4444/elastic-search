@@ -28,6 +28,6 @@
 2. `indexing.js`: script for indexing the data in elasticsearch
 3. `routes/index.js`: script for the api endpoints
 4. `search.js`: script for connecting to elasticsearch and make queries
-5.`python_scripts/script.py`: script for converting the opening and closing time columns into minutes
-6.`test/index.js`: script contain unit tests
-7.`server.js`: set the server configuration
+5. `python_scripts/script.py`: script for converting the opening and closing time columns into minutes
+6. `test/index.js`: script contain unit tests
+7. `server.js`: set the server configuration
